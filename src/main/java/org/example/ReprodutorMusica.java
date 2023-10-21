@@ -1,5 +1,6 @@
 package org.example;
 
+
 public class ReprodutorMusica extends iPhone {
     private String titulo;
     private String artista;
@@ -23,7 +24,7 @@ public class ReprodutorMusica extends iPhone {
         if (ligar(true)) {
             if (!reproduzindo) {
                 System.out.println("Tocando música: " + titulo + " - " + artista + " (Duração: " + min + ":" + seg + " segundos)");
-                reproduzindo = true;
+                        reproduzindo = true;
             } else {
                 System.out.println("A música já está sendo reproduzida.");
             }
@@ -46,7 +47,6 @@ public class ReprodutorMusica extends iPhone {
     }
 
 
-
     public String getTitulo() {
         return titulo;
     }
@@ -63,14 +63,9 @@ public class ReprodutorMusica extends iPhone {
         return seg;
     }
 
-    public boolean mostrarReproduzindo() {
+    public boolean isReproduzindo() {
         return reproduzindo;
     }
 }
-
-
-
-
-
 
 

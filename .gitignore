@@ -34,5 +34,26 @@ build/
 ### VS Code ###
 .vscode/
 
+# Arquivos específicos do IntelliJ IDEA
+.idea/
+
+# Arquivos específicos do sistema operacional
+.DS_Store
+
+# Outros arquivos de configuração específicos do ambiente local
+*.iml
+*.iws
+
+# Crie o arquivo .gitignore no diretório raiz do seu projeto
+echo -e ".idea/\n.DS_Store\n*.iml\n*.iws" > .gitignore
+
+# Faça o commit do arquivo .gitignore
+git add .gitignore
+git commit -m "Adicionar arquivo .gitignore"
+
+# Faça o push das alterações para o GitHub
+git push origin main
+
+
 ### Mac OS ###
 .DS_Store

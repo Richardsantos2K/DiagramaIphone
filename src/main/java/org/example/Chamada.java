@@ -1,3 +1,4 @@
+
 package org.example;
 
 public class Chamada extends iPhone{
@@ -60,5 +61,4 @@ public class Chamada extends iPhone{
             System.out.println("Iphone desligado, não é possivel Iniciar correio de voz");
         }
     }
-
 }

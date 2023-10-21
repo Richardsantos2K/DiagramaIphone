@@ -1,6 +1,6 @@
 package org.example;
 
-public class iPhone{
+public class iPhone {
 
     private String modelo;
 
@@ -8,18 +8,13 @@ public class iPhone{
         this.modelo = modelo;
     }
 
-    public boolean ligar(boolean ligado){
-        if (ligado == true){
+    public boolean ligar(boolean ligado) {
+        if (ligado == true) {
             System.out.println("Iphone ligado" + modelo);
-        } else{
+        } else {
             System.out.println("Iphone desligado");
         }
         return ligado;
     }
-
-
-
-
-
 
 }
