@@ -1,3 +1,4 @@
+
 package org.example;
 
 import java.util.ArrayList;
@@ -11,7 +12,7 @@ public class NavegarInternet extends iPhone {
     }
 
     public void exibirPaginas() {
-        if (ligar(true)) {
+        if (ligadoOrNot(true)) {
             for (Paginas pagina : paginasAbertas) {
                 System.out.println("URL: " + pagina.getUrl());
                 System.out.println("Conteúdo: " + pagina.getConteudo());
@@ -23,7 +24,7 @@ public class NavegarInternet extends iPhone {
     }
 
     public void adicionarNovaAba(Paginas pagina) {
-        if (ligar(true)) {
+        if (ligadoOrNot(true)) {
             paginasAbertas.add(pagina);
             System.out.println("Nova aba adicionada com sucesso.");
         } else {
@@ -32,7 +33,7 @@ public class NavegarInternet extends iPhone {
     }
 
     public void atualizarPaginas() {
-        if (ligar(true)) {
+        if (ligadoOrNot(true)) {
             System.out.println("Atualizando páginas abertas...");
             // Coloque aqui a lógica de atualização das páginas.
             System.out.println("Páginas atualizadas com sucesso.");

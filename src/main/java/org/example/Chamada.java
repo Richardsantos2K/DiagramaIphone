@@ -1,3 +1,4 @@
+
 package org.example;
 
 public class Chamada extends iPhone{
@@ -10,7 +11,7 @@ public class Chamada extends iPhone{
     }
 
     public void ligarChamada(String numero){
-        if (ligar(true)){
+        if (ligadoOrNot(true)){
             if (chamadaAtiva) {
                 System.out.println("Ligando para o numero" + numero);
                 chamadaAtiva = true;
@@ -23,7 +24,7 @@ public class Chamada extends iPhone{
     }
 
     public void desligarChamada(){
-        if (ligar(true)){
+        if (ligadoOrNot(true)){
             if (chamadaAtiva) {
                 System.out.println("Desligando chamada.");
                 chamadaAtiva = false;
@@ -36,7 +37,7 @@ public class Chamada extends iPhone{
     }
 
     public void atenderChamada(){
-        if (ligar(true)){
+        if (ligadoOrNot(true)){
             if (chamadaAtiva) {
                 System.out.println("Atendendo chamada.");
                 chamadaAtiva = true;
@@ -49,7 +50,7 @@ public class Chamada extends iPhone{
     }
 
     public void InciarCorreioVoz(){
-        if (ligar(true)){
+        if (ligadoOrNot(true)){
             if (chamadaAtiva) {
                 System.out.println("Iniciando correio de voz");
                 chamadaAtiva = true;
@@ -60,5 +61,4 @@ public class Chamada extends iPhone{
             System.out.println("Iphone desligado, não é possivel Iniciar correio de voz");
         }
     }
-
 }
